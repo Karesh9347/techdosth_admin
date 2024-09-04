@@ -59,7 +59,7 @@ const AddQuestion = () => {
         }
 
         try {
-            const response = await axios.post('http://localhost:5000/add-question', {
+            const response = await axios.post('https://techdosth-backend-1.onrender.com/add-question', {
                 QuestionName: questionName,
                 description,
                 problemlink,
