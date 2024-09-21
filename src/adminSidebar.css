@@ -1,0 +1,54 @@
+/* Sidebar container */
+.admin-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #343a40; /* Dark background */
+    padding-top: 20px;
+    padding-left: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Subtle shadow */
+    z-index: 1000; /* Ensure it stays on top */
+  }
+  
+  /* Style for individual links in the sidebar */
+  .admin-sidebar .nav-link {
+    color: #ffffff; /* White text */
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .admin-sidebar .nav-link:hover {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Active link style */
+  .admin-sidebar .nav-link.active {
+    background-color: #0062cc; /* Slightly darker blue */
+    color: #ffffff;
+  }
+  
+  /* Adjust padding for the sidebar links */
+  .admin-sidebar .nav-link:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive for smaller screens */
+  @media (max-width: 767px) {
+    .admin-sidebar {
+      width: 200px;
+    }
+    .admin-sidebar .nav-link {
+      font-size: 1rem;
+    }
+  }
+  
