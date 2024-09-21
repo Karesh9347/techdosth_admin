@@ -63,7 +63,7 @@ const AddAptitude = () => {
 
       // Axios POST request to add aptitude question
       const response = await axios.post(
-        "http://localhost:5000/add-aptitude",
+        "https://techdosth-backend-1.onrender.com/add-aptitude",
         dataToSend
       );
 
