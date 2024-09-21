@@ -28,7 +28,7 @@ const AddContest = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/add-contest", formData)
+      .post("https://techdosth-backend-1.onrender.com/add-contest", formData)
       .then((response) => {
         alert("Contest added successfully");
         setFormData({
