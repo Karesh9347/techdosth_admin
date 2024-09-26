@@ -86,6 +86,7 @@ const AddQuestion = () => {
       setMessage(response.data);
       clearForm();
     } catch (error) {
+      console.log(error.response)
       setMessage(
         "Error: " + (error.response ? error.response.data : "An error occurred")
       );
